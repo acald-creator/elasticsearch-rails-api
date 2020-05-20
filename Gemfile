@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.4.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -15,7 +15,7 @@ gem 'sassc'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker'
+gem 'webpacker', '>= 4.0.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
@@ -39,18 +39,18 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # RSpec
-  gem 'rspec-rails', '~> 3.8'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 3.7.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring', '>= 2.0.2'
+  gem 'spring-watcher-listen', '~> 2.0.1'
 end
 
 # Elasticsearch model/rails
@@ -72,7 +72,7 @@ end
 
 # The ruby implementation of the GraphQL language.
 gem 'graphql'
-gem 'graphiql-rails', group: :development
+gem 'graphiql-rails', '>= 1.7.0', group: :development
 
 # JSON API for Rails
 gem 'jsonapi-rails'
