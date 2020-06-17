@@ -15,7 +15,7 @@ gem 'sassc'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker'
+gem 'webpacker', '>= 4.0.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
@@ -39,14 +39,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # RSpec
-  gem 'rspec-rails', '~> 3.8'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 3.7.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -61,9 +61,9 @@ gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-ra
 gem 'rack-cors', :require => 'rack/cors'
 
 # Use Sidekiq
-gem 'sidekiq'
+gem 'sidekiq', '>= 5.2.7'
 # Use sinatra
-gem 'sinatra'
+gem 'sinatra', '>= 2.0.5'
 
 group :test do
   # SQLite 3
@@ -72,7 +72,7 @@ end
 
 # The ruby implementation of the GraphQL language.
 gem 'graphql'
-gem 'graphiql-rails', group: :development
+gem 'graphiql-rails', '>= 1.7.0', group: :development
 
 # JSON API for Rails
 gem 'jsonapi-rails'
